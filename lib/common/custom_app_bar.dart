@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
 
 class CustomerAppBar extends StatelessWidget {
@@ -42,15 +43,18 @@ class CustomerAppBar extends StatelessWidget {
                       ),
                       SizedBox(
                         width: width * 0.65,
-                        child: const Text(
-                          '1234 SWUST Ave Building 17',
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: kGrayLight,
-                            fontWeight: FontWeight.normal,
-                          ),
-                        ),
+                        // child: const ReusableText(
+                        //   text: '1234 SWUST Ave Building 17',
+                        // )
+                        // Text(
+                        //   '1234 SWUST Ave Building 17',
+                        //   overflow: TextOverflow.ellipsis,
+                        //   style: TextStyle(
+                        //     fontSize: 11,
+                        //     color: kGrayLight,
+                        //     fontWeight: FontWeight.normal,
+                        //   ),
+                        // ),
                       ),
                     ],
                   ),

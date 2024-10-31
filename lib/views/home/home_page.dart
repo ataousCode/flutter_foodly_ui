@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodly/common/custom_app_bar.dart';
 import 'package:foodly/common/custom_container.dart';
-import 'package:foodly/common/customer_app.dart';
 import 'package:foodly/constants/constants.dart';
+import 'package:foodly/views/home/widgets/category_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,7 +18,11 @@ class HomePage extends StatelessWidget {
       ),
       body: SafeArea(
         child: CustomContainer(
-          containerContent: Container(),
+          containerContent: const Column(
+            children: [
+              CategoryList(),
+            ],
+          ),
         ),
       ),
     );
