@@ -217,7 +217,7 @@ List<Map<String, dynamic>> foods = [
     "foodTags": ["Vegan", "Healthy", "Salad", "Fresh", "Organic"],
     "foodType": ["Starter", "Lunch", "Dinner", "Health", "Vegan"],
     "code": "41007428",
-    "isAvailable": true,
+    "isAvailable": false,
     "restaurant": "6530ea6bc9e72013e5b6592d",
     "rating": 4.6,
     "ratingCount": "230",
@@ -232,7 +232,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Vinaigrette", "price": "0.50"}
     ],
     "imageUrl":
-       'assets/images/image3.jpg', // "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        'assets/images/image3.jpg', // "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "55 min"
@@ -243,7 +243,7 @@ List<Map<String, dynamic>> foods = [
     "foodTags": ["Italian", "Cheesy", "Vegetarian"],
     "foodType": ["Main Course"],
     "code": "41007428",
-    "isAvailable": true,
+    "isAvailable": false,
     "restaurant": "6530ebbcc9e72013e5b65933",
     "rating": 4.5,
     "ratingCount": "150",
@@ -267,7 +267,7 @@ List<Map<String, dynamic>> foods = [
     "foodTags": ["Fruit", "Smoothie", "Refreshing", "Sweet", "Cold"],
     "foodType": ["Drink", "Breakfast", "Snack", "Dessert", "Vegan"],
     "code": "41007428",
-    "isAvailable": true,
+    "isAvailable": false,
     "restaurant": "6530ea6bc9e72013e5b6592d",
     "rating": 4.7,
     "ratingCount": "280",
@@ -282,7 +282,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 5, "title": "Ice", "price": "0.50"}
     ],
     "imageUrl":
-        'assets/images/image5.jpg',//"https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        'assets/images/image5.jpg', //"https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "25 min"
