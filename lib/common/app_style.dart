@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foodly/constants/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class AppStyles {
-  static const TextStyle addressTextStyle = TextStyle(
-    fontSize: 11,
-    color: kGrayLight,
-    fontWeight: FontWeight.normal,
-  );
+TextStyle appStyle(double size, Color color, FontWeight fw) {
+  return GoogleFonts.poppins(fontSize: size, color: color, fontWeight: fw);
 }

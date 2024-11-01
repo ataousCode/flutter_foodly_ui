@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodly/common/app_style.dart';
 import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
 
@@ -23,38 +24,33 @@ class CustomerAppBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 CircleAvatar(
-                    radius: 22.r,
-                    backgroundColor: kSecondary,
-                    backgroundImage:
-                        const AssetImage('assets/images/profile.jpg')),
+                  radius: 22.r,
+                  backgroundColor: kSecondary,
+                  backgroundImage: const AssetImage(
+                    'assets/images/profile.jpg',
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 6.h, left: 8.w),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Develiver to',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: kSecondary,
-                          fontWeight: FontWeight.normal,
-                        ),
+                      ReusableText(
+                        text: 'Develiver to',
+                        style: appStyle(13, kSecondary, FontWeight.w600),
                       ),
                       SizedBox(
                         width: width * 0.65,
-                        // child: const ReusableText(
-                        //   text: '1234 SWUST Ave Building 17',
-                        // )
-                        // Text(
-                        //   '1234 SWUST Ave Building 17',
-                        //   overflow: TextOverflow.ellipsis,
-                        //   style: TextStyle(
-                        //     fontSize: 11,
-                        //     color: kGrayLight,
-                        //     fontWeight: FontWeight.normal,
-                        //   ),
-                        // ),
+                        child: Text(
+                          '1234 SWUST Building 17',
+                          overflow: TextOverflow.ellipsis,
+                          style: appStyle(
+                            12,
+                            kGrayLight,
+                            FontWeight.normal,
+                          ),
+                        ),
                       ),
                     ],
                   ),

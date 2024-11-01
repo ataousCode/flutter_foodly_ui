@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:foodly/common/app_style.dart';
 
 class ReusableText extends StatelessWidget {
-  const ReusableText({super.key, required this.text, required this.appStyle});
+  const ReusableText({super.key, required this.text, required this.style});
 
   final String text;
-  final TextStyle appStyle;
+  final TextStyle style;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppStyles.addressTextStyle,
+      maxLines: 1,
+      softWrap: false,
+      textAlign: TextAlign.left,
+      style: style,
     );
   }
 }

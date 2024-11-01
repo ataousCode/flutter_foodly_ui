@@ -52,7 +52,7 @@ class CategoryList extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 35.h,
-                        child: Image.network(
+                        child: Image.asset(
                           category['imageUrl'],
                           fit: BoxFit.contain,
                         ),

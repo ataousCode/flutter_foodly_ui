@@ -3,8 +3,8 @@ List<dynamic> categories = [
     "_id": "6537ece708ff5b7de97d0695",
     "title": "Fried Rice",
     "value": "fried_rice",
-    "imageUrl":
-        "https://cdn2.iconfinder.com/data/icons/international-food/64/fried_rice-512.png",
+    "imageUrl": 'assets/images/profile.jpg',
+    //"https://cdn2.iconfinder.com/data/icons/international-food/64/fried_rice-512.png",
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0
@@ -13,35 +13,40 @@ List<dynamic> categories = [
     "_id": "65310f3381e4d98d60b093c5",
     "title": "Curry",
     "value": "curry",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/590/590729.png",
+    "imageUrl":
+        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/590/590729.png",
     "__v": 0
   },
   {
     "_id": "6531206cbbe4998e90af3feb",
     "title": "Pizza",
     "value": "pizza",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/6978/6978255.png",
+    "imageUrl":
+        'assets/images/profile.jpg', // "https://cdn-icons-png.flaticon.com/512/6978/6978255.png",
     "__v": 0
   },
   {
     "_id": "6531209dbbe4998e90af3fef",
     "title": "Pasta",
     "value": "pasta",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/4465/4465494.png",
+    "imageUrl":
+        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/4465/4465494.png",
     "__v": 0
   },
   {
     "_id": "653120babbe4998e90af3ff1",
     "title": "Beverages",
     "value": "beverages",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/6190/6190582.png",
+    "imageUrl":
+        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/6190/6190582.png",
     "__v": 0
   },
   {
     "_id": "65312084bbe4998e90af3fed",
     "title": "Burgers",
     "value": "burgers",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+    "imageUrl":
+        'assets/images/profile.jpg', // "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
     "__v": 0
   },
   {
@@ -49,7 +54,7 @@ List<dynamic> categories = [
     "title": "Chicken",
     "value": "chicken",
     "imageUrl":
-        "https://cdn-icons-png.freepik.com/256/821/821023.png?semt=ais_hybrid",
+        'assets/images/profile.jpg', //"https://cdn-icons-png.freepik.com/256/821/821023.png?semt=ais_hybrid",
     "__v": 0
   },
   {
@@ -57,7 +62,7 @@ List<dynamic> categories = [
     "title": "More",
     "value": "more",
     "imageUrl":
-        "https://w7.pngwing.com/pngs/415/246/png-transparent-basic-ui-essential-interface-app-more-ui-essentials-icon-thumbnail.png",
+        'assets/images/profile.jpg', //"https://w7.pngwing.com/pngs/415/246/png-transparent-basic-ui-essential-interface-app-more-ui-essentials-icon-thumbnail.png",
     "__v": 0
   }
 ];
