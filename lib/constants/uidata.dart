@@ -3,8 +3,8 @@ List<dynamic> categories = [
     "_id": "6537ece708ff5b7de97d0695",
     "title": "Fried Rice",
     "value": "fried_rice",
-    "imageUrl": 'assets/images/profile.jpg',
-    //"https://cdn2.iconfinder.com/data/icons/international-food/64/fried_rice-512.png",
+    "imageUrl": 'assets/images/fried_rice.webp',
+    // "https://cdn2.iconfinder.com/data/icons/international-food/64/fried_rice-512.png", //'assets/images/profile.jpg',
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0
@@ -14,7 +14,7 @@ List<dynamic> categories = [
     "title": "Curry",
     "value": "curry",
     "imageUrl":
-        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/590/590729.png",
+        'assets/images/curry.png', //"https://cdn-icons-png.flaticon.com/512/590/590729.png",
     "__v": 0
   },
   {
@@ -22,7 +22,7 @@ List<dynamic> categories = [
     "title": "Pizza",
     "value": "pizza",
     "imageUrl":
-        'assets/images/profile.jpg', // "https://cdn-icons-png.flaticon.com/512/6978/6978255.png",
+        'assets/images/pizza.png', // "https://cdn-icons-png.flaticon.com/512/6978/6978255.png",
     "__v": 0
   },
   {
@@ -30,7 +30,7 @@ List<dynamic> categories = [
     "title": "Pasta",
     "value": "pasta",
     "imageUrl":
-        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/4465/4465494.png",
+        'assets/images/pasta.png', // "https://cdn-icons-png.flaticon.com/512/4465/4465494.png",
     "__v": 0
   },
   {
@@ -38,7 +38,7 @@ List<dynamic> categories = [
     "title": "Beverages",
     "value": "beverages",
     "imageUrl":
-        'assets/images/profile.jpg', //"https://cdn-icons-png.flaticon.com/512/6190/6190582.png",
+        'assets/images/beverages.png', //"https://cdn-icons-png.flaticon.com/512/6190/6190582.png",
     "__v": 0
   },
   {
@@ -46,23 +46,23 @@ List<dynamic> categories = [
     "title": "Burgers",
     "value": "burgers",
     "imageUrl":
-        'assets/images/profile.jpg', // "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+        'assets/images/burgers.png', //"https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
     "__v": 0
   },
   {
     "_id": "65310efb81e4d98d60b093c3",
     "title": "Chicken",
     "value": "chicken",
-    "imageUrl":
-        'assets/images/profile.jpg', //"https://cdn-icons-png.freepik.com/256/821/821023.png?semt=ais_hybrid",
+    "imageUrl": 'assets/images/chicken.png',
+    //"https://cdn-icons-png.freepik.com/256/821/821023.png?semt=ais_hybrid",
     "__v": 0
   },
   {
     "_id": "653120e1bbe4998e90af3ff3",
     "title": "More",
     "value": "more",
-    "imageUrl":
-        'assets/images/profile.jpg', //"https://w7.pngwing.com/pngs/415/246/png-transparent-basic-ui-essential-interface-app-more-ui-essentials-icon-thumbnail.png",
+    "imageUrl": 'assets/images/more.png',
+    //"https://w7.pngwing.com/pngs/415/246/png-transparent-basic-ui-essential-interface-app-more-ui-essentials-icon-thumbnail.png",
     "__v": 0
   }
 ];

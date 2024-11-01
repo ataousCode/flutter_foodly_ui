@@ -75,7 +75,7 @@ class CustomerAppBar extends StatelessWidget {
     } else if (hour >= 12 && hour < 16) {
       return ' ⛅ ';
     } else {
-      return ' 🌃 ';
+      return ' 🌙 ';
     }
   }
 }
