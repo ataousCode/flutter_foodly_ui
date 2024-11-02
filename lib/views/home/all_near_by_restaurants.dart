@@ -13,6 +13,7 @@ class AllNearByRestaurants extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: kOffWhite,
         appBar: AppBar(
           elevation: 0,
           backgroundColor: kOffWhite,
