@@ -27,7 +27,7 @@ class CustomerAppBar extends StatelessWidget {
                   radius: 22.r,
                   backgroundColor: kSecondary,
                   backgroundImage: const AssetImage(
-                    'assets/images/profile.jpg',
+                    'assets/images/atalib.jpg',
                   ),
                 ),
                 Padding(
