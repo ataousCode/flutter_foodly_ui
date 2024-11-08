@@ -48,7 +48,7 @@ class RestaurantWidget extends StatelessWidget {
                       child: SizedBox(
                         height: 112.h,
                         width: width * 0.8,
-                        child: Image.asset(
+                        child: Image.network(
                           image,
                           fit: BoxFit.fitWidth,
                         ),
@@ -65,7 +65,7 @@ class RestaurantWidget extends StatelessWidget {
                             padding: EdgeInsets.all(2.h),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(50.r),
-                              child: Image.asset(
+                              child: Image.network(
                                 logo,
                                 fit: BoxFit.cover,
                                 width: 20.w,

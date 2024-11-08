@@ -99,7 +99,7 @@ List<dynamic> restaurants = [
     "owner": "sjgdsjgfjshhjs",
     "code": "41007428",
     "logoUrl":
-        'assets/images/image2.jpg', //"https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        'assets/images/image2.jpg', //" ",
     "rating": 5,
     "ratingCount": "3278",
     "coords": {
