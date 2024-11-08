@@ -4,8 +4,6 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:foodly/models/restaurants_model.dart';
 import 'package:http/http.dart' as http;
 
-import 'dart:convert';
-
 import '../models/hook_models/hook_result.dart';
 
 FetchHook useFecthRestaurants(String code) {
@@ -18,7 +16,7 @@ FetchHook useFecthRestaurants(String code) {
     isLoading.value = true;
 
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/v1/restaurants/all/$code');
+      Uri url = Uri.parse('$appBaseUrl/api/v1/restaurants/random/$code');
       final response = await http.get(url);
 
       if (response.statusCode == 200) {
