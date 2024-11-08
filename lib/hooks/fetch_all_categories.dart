@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import '../models/categories_model.dart';
 import '../models/hook_models/hook_result.dart';
 
-FetchHook useFecthCategories() {
+FetchHook useFecthAllCategories() {
   final categoriesItems = useState<List<CategoriesModel>?>(null);
   final isLoading = useState<bool>(false);
   final error = useState<Exception?>(null);
@@ -16,7 +16,7 @@ FetchHook useFecthCategories() {
     isLoading.value = true;
 
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/v1/categories/random');
+      Uri url = Uri.parse('$appBaseUrl/api/v1/categories/');
       final response = await http.get(url);
       //print(response);
 

@@ -69,7 +69,7 @@ class Food {
         time: json["time"] ?? '',
       );
     } catch (e) {
-      print("Error parsing food item: $e");
+      //print("Error parsing food item: $e");
       throw Exception("Failed to parse Food JSON");
     }
   }
