@@ -2,11 +2,10 @@ import 'package:foodly/constants/constants.dart';
 import 'package:foodly/models/api_error.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:foodly/models/foods_model.dart';
+import 'package:foodly/models/hook_models/food_hook.dart';
 import 'package:http/http.dart' as http;
 
-import '../models/hook_models/hook_result.dart';
-
-FetchHook useFecthAllFoods(String code) {
+FetchFoods useFecthAllFoods(String code) {
   final foods = useState<List<Food>?>(null);
   final isLoading = useState<bool>(false);
   final error = useState<Exception?>(null);
@@ -16,7 +15,7 @@ FetchHook useFecthAllFoods(String code) {
     isLoading.value = true;
 
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/v1/foods/recommendation/$code');
+      Uri url = Uri.parse('$appBaseUrl/api/v1/foods/byCode/$code');
       final response = await http.get(url);
 
       if (response.statusCode == 200) {
@@ -41,7 +40,7 @@ FetchHook useFecthAllFoods(String code) {
     fetchData();
   }
 
-  return FetchHook(
+  return FetchFoods(
     data: foods.value,
     isLoading: isLoading.value,
     error: error.value,
