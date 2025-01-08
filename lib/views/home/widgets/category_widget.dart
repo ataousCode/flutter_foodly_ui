@@ -10,7 +10,7 @@ import 'package:get/get.dart';
 import '../../../models/categories_model.dart';
 
 class CategoryWidget extends StatelessWidget {
-  CategoryWidget({
+   CategoryWidget({
     super.key,
     required this.category,
   });

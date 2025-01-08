@@ -5,6 +5,9 @@ import 'package:foodly/common/shimmers/nearby_shimmer.dart';
 import 'package:foodly/hooks/fetch_restaurants.dart';
 import 'package:foodly/models/restaurants_model.dart';
 import 'package:foodly/views/home/widgets/restaurant_widget.dart';
+import 'package:get/get.dart';
+
+import '../../restaurant/restaurant_page.dart';
 
 class NearbyRestaurantsList extends HookWidget {
   const NearbyRestaurantsList({super.key});
@@ -24,6 +27,9 @@ class NearbyRestaurantsList extends HookWidget {
               children: List.generate(restaurants!.length, (index) {
                 Restaurants restaurant = restaurants[index];
                 return RestaurantWidget(
+                  onTap: () {
+                    Get.to(() => RestaurantPage(restaurant: restaurant));
+                  },
                   image: restaurant.imageUrl!,
                   logo: restaurant.logoUrl!,
                   title: restaurant.title!,

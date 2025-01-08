@@ -5,6 +5,9 @@ import 'package:foodly/common/shimmers/nearby_shimmer.dart';
 import 'package:foodly/hooks/fetch_foods.dart';
 import 'package:foodly/models/foods_model.dart';
 import 'package:foodly/views/home/widgets/food_widget.dart';
+import 'package:get/get.dart';
+
+import '../../food/food_page.dart';
 
 class FoodList extends HookWidget {
   const FoodList({super.key});
@@ -24,6 +27,9 @@ class FoodList extends HookWidget {
               children: List.generate(foods!.length, (index) {
                 Food food = foods[index];
                 return FoodWidget(
+                  onTap: () {
+                    Get.to(() => FoodPage(food: food));
+                  },
                   image: food.imageUrl[0],
                   title: food.title,
                   time: food.time,

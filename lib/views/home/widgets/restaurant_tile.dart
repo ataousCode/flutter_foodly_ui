@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -7,6 +7,8 @@ import 'package:foodly/common/app_style.dart';
 import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
 import 'package:foodly/models/restaurants_model.dart';
+import 'package:foodly/views/restaurant/restaurant_page.dart';
+import 'package:get/get.dart';
 
 class RestaurantTile extends StatelessWidget {
   RestaurantTile({
@@ -19,7 +21,9 @@ class RestaurantTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Get.to(() => RestaurantPage(restaurant: restaurant));
+      },
       child: Stack(
         clipBehavior: Clip.hardEdge,
         children: [
@@ -114,7 +118,7 @@ class RestaurantTile extends StatelessWidget {
                 color: restaurant.isAvailable == true ||
                         restaurant.isAvailable //== null
                     ? kPrimary
-                    : kSecondaryLight, 
+                    : kSecondaryLight,
                 borderRadius: BorderRadius.circular(8.r),
               ),
               child: Center(

@@ -21,19 +21,23 @@ class CategoryFoodsList extends HookWidget {
       height: height,
       child: isLoading
           ? const FoodsListShimmer()
-          : Padding(
-              padding: EdgeInsets.all(12.h),
-              child: ListView(
-                //scrollDirection: Axis.horizontal,
-                children: List.generate(
-                  foods!.length,
-                  (index) {
-                    Food food = foods[index];
-                    return FoodTile(food: food);
-                  },
+          : foods == null || foods.isEmpty
+              ? const Center(
+                  child: Text('No foods found'),
+                )
+              : Padding(
+                  padding: EdgeInsets.all(12.h),
+                  child: ListView(
+                    //scrollDirection: Axis.horizontal,
+                    children: List.generate(
+                      foods.length,
+                      (index) {
+                        Food food = foods[index];
+                        return FoodTile(color: Colors.white, food: food);
+                      },
+                    ),
+                  ),
                 ),
-              ),
-            ),
     );
   }
 }
