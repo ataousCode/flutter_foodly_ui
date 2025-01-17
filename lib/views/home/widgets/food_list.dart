@@ -24,18 +24,21 @@ class FoodList extends HookWidget {
           ? const NearbyShimmer()
           : ListView(
               scrollDirection: Axis.horizontal,
-              children: List.generate(foods!.length, (index) {
-                Food food = foods[index];
-                return FoodWidget(
-                  onTap: () {
-                    Get.to(() => FoodPage(food: food));
-                  },
-                  image: food.imageUrl[0],
-                  title: food.title,
-                  time: food.time,
-                  price: food.price.toStringAsFixed(2),
-                );
-              }),
+              children: List.generate(
+                foods!.length,
+                (index) {
+                  Food food = foods[index];
+                  return FoodWidget(
+                    onTap: () {
+                      Get.to(() => FoodPage(food: food));
+                    },
+                    image: food.imageUrl[0],
+                    title: food.title,
+                    time: food.time,
+                    price: food.price.toStringAsFixed(2),
+                  );
+                },
+              ),
             ),
     );
   }

@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 // ignore: must_be_immutable
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});
+  
 
   List<Widget> pages = [
     const HomePage(),
