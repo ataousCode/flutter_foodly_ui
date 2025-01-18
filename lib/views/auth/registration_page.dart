@@ -5,6 +5,8 @@ import 'package:foodly/common/app_style.dart';
 import 'package:foodly/common/back_ground_container.dart';
 import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
+import 'package:foodly/controllers/registration_controller.dart';
+import 'package:foodly/models/registration_model.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
@@ -37,6 +39,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(RegistrationController());
     return Scaffold(
       backgroundColor: kPrimary,
       appBar: AppBar(
@@ -71,8 +74,9 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   children: [
                     EmailTextfield(
                       hintText: 'Username',
+                      keyboardType: TextInputType.text,
                       prefixIcon: const Icon(
-                        CupertinoIcons.person,
+                        CupertinoIcons.profile_circled,
                         size: 22,
                         color: kGrayLight,
                       ),
@@ -94,8 +98,21 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     SizedBox(height: 25.h),
                     CustomButton(
-                      text: 'REGISTER',
-                      onTap: () {},
+                      text: 'R E G I S T E R',
+                      onTap: () {
+                        if (_usernamelController.text.isNotEmpty &&
+                            _emailController.text.isNotEmpty &&
+                            _passwordController.text.length >= 8) {
+                          RegistrationModel model = RegistrationModel(
+                              username: _usernamelController.text,
+                              email: _emailController.text,
+                              password: _passwordController.text);
+
+                          String data = registrationModelToJson(model);
+                          //todo: registration function
+                          controller.registrationFunction(data);
+                        }
+                      },
                       btnHeight: 35.h,
                       btnWidth: width,
                     ),

@@ -35,7 +35,7 @@ class PasswordTextField extends StatelessWidget {
             prefixIcon: const Icon(
               CupertinoIcons.lock_circle,
               size: 26,
-              color: kGray,
+              color: kGrayLight,
             ),
             suffixIcon: GestureDetector(
               onTap: () {
@@ -46,7 +46,7 @@ class PasswordTextField extends StatelessWidget {
                     ? Icons.visibility
                     : Icons.visibility_off,
                 size: 26,
-                color: kGray, 
+                color: kGrayLight,
               ),
             ),
             isDense: true,

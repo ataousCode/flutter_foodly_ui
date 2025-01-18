@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:foodly/models/login_response.dart';
 
 import '../../../common/app_style.dart';
 import '../../../common/reusable_text.dart';
 import '../../../constants/constants.dart';
 
 class UserInfoWidget extends StatelessWidget {
-  const UserInfoWidget({super.key});
+  const UserInfoWidget({super.key, this.user});
+
+  final LoginResponse? user; 
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +31,10 @@ class UserInfoWidget extends StatelessWidget {
                     SizedBox(
                       height: 35.h,
                       width: 35.w,
-                      child: const CircleAvatar(
+                      child:  CircleAvatar(
                         backgroundColor: kGrayLight,
-                        backgroundImage: AssetImage('assets/images/atalib.jpg'),
+                        backgroundImage: NetworkImage(user!.profile)
+                        //AssetImage('assets/images/atalib.jpg'),
                       ),
                     ),
                     SizedBox(
@@ -42,10 +46,10 @@ class UserInfoWidget extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ReusableText(
-                              text: "Almousleck",
+                              text: user!.username,
                               style: appStyle(12, kGray, FontWeight.w600)),
                           ReusableText(
-                              text: "almousleck@ studio.com",
+                              text: user!.email,
                               style: appStyle(10, kGray, FontWeight.normal)),
                         ],
                       ),

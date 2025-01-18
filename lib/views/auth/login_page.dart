@@ -5,11 +5,13 @@ import 'package:foodly/common/app_style.dart';
 import 'package:foodly/common/back_ground_container.dart';
 import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
+import 'package:foodly/controllers/login_controller.dart';
 import 'package:foodly/views/auth/registration_page.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../common/custom_button.dart';
+import '../../models/login_model.dart';
 import 'widget/email_textfield.dart';
 import 'widget/password_text_field.dart';
 
@@ -35,6 +37,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(LoginController());
     return Scaffold(
       backgroundColor: kPrimary,
       appBar: AppBar(
@@ -84,11 +87,17 @@ class _LoginPageState extends State<LoginPage> {
                     CustomButton(
                       text: 'L O G I N',
                       onTap: () {
-                        Get.to(
-                          () => const LoginPage(),
-                          transition: Transition.cupertino,
-                          duration: const Duration(milliseconds: 900),
-                        );
+                        if (_emailController.text.isNotEmpty &&
+                            _passwordController.text.length >= 8) {
+                          LoginModel model = LoginModel(
+                              email: _emailController.text,
+                              password: _passwordController.text);
+
+                          String data = loginModelToJson(model);
+
+                          //todo: Login function
+                          controller.loginFunction(data);
+                        }
                       },
                       btnHeight: 35.h,
                       btnWidth: width,
