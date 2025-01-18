@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 String googleApiKey = '';
-
-const kPrimary = Color(0xFF30b9b2);
+//0xFF30b9b2
+const kPrimary = Color.fromARGB(255, 71, 94, 223);
 const kPrimaryLight = Color(0xFF40F3EA);
 const kSecondary = Color(0xffffa44f);
 const kSecondaryLight = Color(0xFFffe5db);

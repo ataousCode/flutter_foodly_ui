@@ -8,15 +8,17 @@ class CustomContainer extends StatelessWidget {
     super.key,
     required this.containerContent,
     this.color,
+    this.containerHeight,
   });
 
   Widget containerContent;
   Color? color;
+  double? containerHeight;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.75,
+      height: containerHeight ?? MediaQuery.of(context).size.height * 0.75,
       child: ClipRRect(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(30.r),
