@@ -11,7 +11,6 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../common/custom_button.dart';
-import 'login_page.dart';
 import 'widget/email_textfield.dart';
 import 'widget/password_text_field.dart';
 
@@ -117,33 +116,33 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       btnWidth: width,
                     ),
                     //SizedBox(height: 25.h),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 28.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          ReusableText(
-                            text: 'Have an account?',
-                            style: appStyle(12, kGray, FontWeight.w500),
-                          ),
-                          SizedBox(width: 5.w),
-                          GestureDetector(
-                            onTap: () {
-                              Get.to(
-                                () => const LoginPage(),
-                                transition: Transition.cupertino,
-                                duration: const Duration(milliseconds: 900),
-                              );
-                            },
-                            child: ReusableText(
-                              text: 'Login',
-                              style: appStyle(12, Colors.blue, FontWeight.w500),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(top: 28.0),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.center,
+                    //     crossAxisAlignment: CrossAxisAlignment.center,
+                    //     children: [
+                    //       ReusableText(
+                    //         text: 'Have an account?',
+                    //         style: appStyle(12, kGray, FontWeight.w500),
+                    //       ),
+                    //       SizedBox(width: 5.w),
+                    //       GestureDetector(
+                    //         onTap: () {
+                    //           Get.to(
+                    //             () => const LoginPage(),
+                    //             transition: Transition.cupertino,
+                    //             duration: const Duration(milliseconds: 900),
+                    //           );
+                    //         },
+                    //         child: ReusableText(
+                    //           text: 'Login',
+                    //           style: appStyle(12, Colors.blue, FontWeight.w500),
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

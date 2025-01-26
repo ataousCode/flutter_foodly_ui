@@ -6,6 +6,7 @@ import 'package:foodly/common/custom_container.dart';
 import 'package:foodly/controllers/login_controller.dart';
 import 'package:foodly/models/login_response.dart';
 import 'package:foodly/views/auth/login_redirect.dart';
+import 'package:foodly/views/profile/shipping_address.dart';
 import 'package:foodly/views/profile/widget/profile_app_bar.dart';
 import 'package:foodly/constants/constants.dart';
 import 'package:foodly/views/profile/widget/profile_tile_widget.dart';
@@ -35,7 +36,7 @@ class ProfilePage extends StatelessWidget {
     }
 
     if (user != null && user.verification == false) {
-      return const VerificationPage(); 
+      return const VerificationPage();
     }
 
     return Scaffold(
@@ -95,7 +96,13 @@ class ProfilePage extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   children: [
                     ProfileTileWidget(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to( 
+                          () => const ShippingAddress(),
+                          transition: Transition.rightToLeft,
+                          duration: const Duration(milliseconds: 900),
+                        );
+                      },
                       title: 'Address',
                       icon: SimpleLineIcons.location_pin,
                     ),

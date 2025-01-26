@@ -11,8 +11,11 @@ Widget defaultHome = MainScreen();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  //AIzaSyAYLtIGer-vFAnd9OIOYrYPFmySsKyZcko android
+  //AIzaSyDTTYP_7TFq3qT2Hr4bAyRUezwe9peV76w
   await GetStorage.init();
 
   runApp(const MyApp());
